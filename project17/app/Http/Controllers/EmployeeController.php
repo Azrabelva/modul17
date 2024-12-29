@@ -163,10 +163,5 @@ class EmployeeController extends Controller
         return Excel::download(new EmployeesExport, 'employees.xlsx');
     }
 
-    // public function exportPdf()
-    // {
-    //     $employees = Employee::all();
-    //     $pdf = PDF::loadView('employee.export_pdf', compact('employees'));
-    //     return $pdf->download('employees.pdf');
-    // }
+
 }
